@@ -38,6 +38,7 @@
 	.navbar{padding: 15px 0;}
 	
 	.navbar-collapse{background-color: #fff; margin-top: 10px;}
+	.navbar-collapse ul{padding-top: 10px;}
 	
 	.navbar .navbar-nav .nav-link{color: #333; text-align: center;}
 	
@@ -57,6 +58,11 @@
 		line-height: 1.5em;
 		margin: 0 10%;
 	}
+}
+/* my css for padding of the home button */
+@media (max-width: 991px){
+div#main-navbar {
+    padding-top: 10px;
 }
 
 /* Large devices (desktops, 992px and up)  */
