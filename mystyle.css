@@ -121,7 +121,8 @@ tab.active + img{
 }
 .divToShow{
     z-index: 2;
-    display: none;		
+    display: none;	
+    overflow: scroll;	
     height: 400px;	
     transition: height 3s;
     animation: grow0 0.5s forwards;
@@ -190,6 +191,7 @@ tab.active + img{
 @media(max-width: 400px){
     
     .divToShow{
+        overflow: scroll;
         display: none;
     }
     .outer-show{
