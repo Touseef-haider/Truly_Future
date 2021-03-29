@@ -182,9 +182,9 @@ tab.active + img{
         left: 200px;
         /* border: 10px solid blue; */
     }
-    body{
+    /* body{
         background-color: red;
-    }
+    } */
 }
 
 @media(max-width: 400px){
