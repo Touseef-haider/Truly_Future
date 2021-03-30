@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     $number = $_POST['number'];
     // $message = $_POST['message']
     // $service = $_POST['Services']
-    $sql_query = "INSERT INTO TableName (name,email,phNum) VALUES ('$name','$email','$number') "
+    $sql_query = "INSERT INTO detail (name,email,phNum) VALUES ('$name','$email','$number') "
     if (mysqli_query($conn,$sql_query)) {
         echo 'Inserted Successfully'
     }

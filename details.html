@@ -430,6 +430,12 @@
          window.onload = () =>{
             var amount =  window.location.href.split('/')[7].split('=')[1]
             document.querySelector('.main-btn').href = `https://www.vbsystem.co/payment?amount=${amount}`
+            document.querySelector('.main-btn').target = `_blank`
+        }
+        function proceed() {
+            // alert("Hello")
+            
+            window.open(`https://www.vbsystem.co/payment?amount=${amount}`,"_blank")
         }
      </script>
 	  <!-- start of privacy policy  -->
@@ -440,7 +446,7 @@
                     <form class="form" id="contact-form" method="post" action="details.php">
                         <div class="messages"></div>
                         <div class="controls">
-                            <div class="row"> 
+                            <div class="row container"> 
                                 <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="color-red" for="name">Enter Your Name</label>
@@ -470,8 +476,8 @@
                                         <div class="help-block with-errors color-red"></div>
                                     </div>
                                 </div> -->
-                                <div class="col-md-4  col-sm-4">
-                                    <a role="button" name="submit"  href="" target="_blank" style="display: block !important;" class="main-btn btn-3">Proceed to payment</a>
+                                <div class="col-md-4  col-sm-6">
+                                    <a role="button" name="submit"  style="display: block !important;" class="main-btn btn-3">Proceed to payment</a>
                                 </div>  
                             </div>
                         </div>
