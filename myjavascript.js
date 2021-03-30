@@ -29,6 +29,7 @@ document.querySelector('.main-service').addEventListener('mouseover',()=>{
 
 
 
+
 var count = 0; 
 			function myFun() {
 				if (count == 0) {
@@ -59,6 +60,7 @@ var count = 0;
 						document.querySelector('.divToShow').style.display = 'block'
 						setTimeout(() => {
 							document.querySelector('.btn-3').style.display='block';
+							document.querySelector('.msg-btn').style.display='block';
 							document.querySelector('.close-icon').style.display='block';
 						}, 500);
 						count = count + 1;

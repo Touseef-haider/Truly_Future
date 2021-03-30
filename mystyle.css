@@ -122,7 +122,6 @@ tab.active + img{
 .divToShow{
     z-index: 2;
     display: none;	
-    overflow: scroll;	
     height: 400px;	
     transition: height 3s;
     animation: grow0 0.5s forwards;
@@ -174,6 +173,10 @@ tab.active + img{
     }
     .flex-div{
         flex-direction: column;
+    }
+    .divToShow{
+    overflow: scroll;	
+
     }
 }
 
