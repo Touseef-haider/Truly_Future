@@ -161,6 +161,7 @@ tab.active + img{
     .logo-lower{
         margin-top: 60px;
     }
+
 }
 
 @media (max-width: 991px){
@@ -177,6 +178,12 @@ tab.active + img{
     .divToShow{
     overflow: scroll;	
 
+    }
+    .process-area-for-mobile{
+        display: none !important;
+    }
+    .open-mobile-form{
+        margin-top: 200px !important;
     }
 }
 

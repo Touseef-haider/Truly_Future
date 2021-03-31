@@ -23,210 +23,7 @@
 	<link rel="stylesheet" href="./mystyle.css">
 	
 </head>
-  		<!-- my css for checking purpose -->
-	<style>
-		#services-section{
-			position: absolute;
-			top: 80px;
-			background-color: white;
-			display: none;
-			border-radius: 5px;
-		}
-		#services-section ul li:hover{
-			border-bottom: solid 1px grey;
-			padding-right: 30px;
-		}
-		#services-section ul li{
-			padding-right: 30px;
-		}
-		/* START (SIDE) */
-		.services-sect{
-			background-color: white;
-		}
-		.services-sect ul{
-			padding: 0;
-		}
-		.services-sect ul li{
-			list-style-type: none;
-			margin:10px 20px;
-		}
-		.services-sect ul li a{
-			color: #16c885;
-			text-decoration:none;
-			padding: 0;
-			margin: 0;
-		}
-
-		/* END (SIDE) */
-
-		/* START (MOBILE) */
-		.services-sectM{
-			text-align: center;
-			background-color:#16c885;
-		}
-		.services-sectM ul{
-			padding: 0;
-		}
-		.services-sectM ul li{
-			list-style-type: none;
-			margin:10px 20px;
-		}
-		.services-sectM ul li a{
-			color:white;
-			text-decoration:none;
-			padding: 0;
-			margin: 0;
-		}
-
-		/* END (MOBILE) */
-
-		/* a:active{
-			border-bottom: 3px solid;
-			transition: border 1s;
-		} */
-		#services-section ul{
-			padding: 0;
-		}
-		#services-section ul li{
-			list-style-type: none;
-			margin:10px 20px;
-		}
-		#services-section ul li a{
-			color: #16c885;
-			text-decoration:none;
-			padding: 0;
-			margin: 0;
-		}
-		
-		html{
-			scroll-behavior: smooth;
-		}
-		tab.active + img{
-			color: white;
-		}	
-		.outer-show{
-			width: 50px;
-			z-index: 999;
-			height: 180px;
-			cursor: pointer;
-			box-shadow: -20px 7px 18px -7px rgba(87, 184, 151, 0.09);
-			border-radius: 0 10px 10px 0;
-			display: inline-block;
-			padding-top: 0;
-			vertical-align: top;
-			/* margin-top: 120px; */
-			position: fixed;
-			text-transform: uppercase;
-			/* background: linear-gradient(to right,magenta, #008080); */
-			background-color: #16c885;
-			left: 0px;
-			right: auto;
-			top: 40%;
-		}
-
-		.outer-show p {
-			color: #ffffff;
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-			position: absolute;
-			display: block;
-			transform: rotate(-90deg);
-			-webkit-transition: 0.4s;
-			-moz-transition: 0.4s;
-			-o-transition: 0.4s;
-			transition: 0.4s;
-			left: -38px;
-			text-transform: capitalize;
-			white-space: pre;
-			bottom: 75px;
-		}
-		.divToShow{
-			z-index: 2;
-			display: none;		
-			height: 400px;	
-			transition: height 3s;
-			animation: grow0 0.5s forwards;
-		}
-		.openDiv{
-			position: fixed;
-			top: 30%;
-			transition: left  3s ease;
-		}
-		.close-icon{
-			display: none;
-		}
-		
-		@media (min-width: 991px){
-			.serviceM{
-				display: none;
-			}
-		}
-
-		@keyframes grow0 {
-			from {
-				width: 0px;
-			}
-			to {
-				width: 400px;
-			}
-		}
-		@keyframes grow1 {
-			from {
-				width: 0px;
-			}
-			to {
-				width: 250px;
-			}
-		}
-		@media (max-width: 500px){
-			.logo-lower{
-				margin-top: 60px;
-			}
-		}
-
-		@media (max-width: 991px){
-			.serviceM{
-				display: block !important;
-				cursor: pointer;
-			}
-			.serviceD{
-				display: none;
-			}
-		}
-
-		@media(max-width: 400px){
-			
-			.divToShow{
-				display: none;
-			}
-			.outer-show{
-				display: none;
-			}
-		}
-		.btn-3{
-			display: none;
-		}
-		.bg-image{
-			
-			position: relative;
-			height: 600px;
-			background-image: url('./images/Trulyfuture-slider-img.webp');
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			background-color: rgba(0,0,0,0.8);
-			/* background-blend-mode: overlay; */
-			text-align: center;
-			overflow: hidden;
-			-webkit-clip-path: none;
-			clip-path: none;
-		}
-	
-		
-	</style>
-	
+  	
 <body>
 	  <!-- ==================================================
 							load-wrapp
@@ -414,7 +211,7 @@
 	  <!-- ==================================================
 							blog-intro
       ================================================== -->
-      <section class="flex-center d-flex align-items-center bg-image"  data-scroll-index="1">
+      <!-- <section class="flex-center d-flex align-items-center bg-image"  data-scroll-index="1">
        
         <div class="med-padding">
             <div class="flex-center med-padding">
@@ -430,38 +227,38 @@
                 </div>
         </div>
       </div>
-    </section>
+    </section> -->
 	<!-- Process -->
 	
 	<!-- ==================================================
 							process-area
       ================================================== -->
-	  <section class="process-area text-center  sec-padding bg-111" >
-		<div class="container">
-			 <h6 class="circle-box p-relative color-red text-center fw-300 mb-5px mt-40px">
+	  <section class="process-area text-center  sec-padding bg-111 process-area-for-mobile" >
+		<div class="container " style="margin-top: 100px;">
+			 <h6 class="circle-box p-relative color-red text-center fw-300 mb-5px mt-50px">
 				How We Work?
 				<span class="circle-1 p-absolute bg-red radius-3px"></span>
 			</h6>
-			<h1 class="title-h color-fff p-relative fw-600 mb-80px"><span class="fw-300">The</span> Process<span class="fw-300"> We follow</span></h1>
+			<h1 class="title-h color-fff p-relative fw-600 mb-80px"><span class="fw-300">Details</span> For<span class="fw-300">  Payment Query</span></h1>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="box mb-50px-sm">
 						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">01</h6>
-						<h4 class="color-fff mt-20px mb-10px">Audit</h4>
+						<h4 class="color-fff mt-20px mb-10px">Select Plan</h4>
 						<p class="color-aaa">We audit and study the brand's niche and nature to extract all the functional and non-functional user requirements.</p> 
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="box mb-50px-sm">
 						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">02</h6>
-						<h4 class="color-fff mt-20px mb-10px">Design</h4>
+						<h4 class="color-fff mt-20px mb-10px color-red">Fill Form</h4>
 						<p class="color-aaa">We then translate those requirements to an elegant presentable design to enhanced user experience.</p> 
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="box after-none">
 						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">03</h6>
-						<h4 class="color-fff mt-20px mb-10px">Build</h4>
+						<h4 class="color-fff mt-20px mb-10px">Check Out</h4>
 						<p class="color-aaa">The next gen revolution begins here, when we transform the brand's idea and design into a breathtaking model.</p> 
 					</div>
 				</div>
@@ -480,8 +277,7 @@
             window.open(`https://www.vbsystem.co/payment?amount=${amount}`,"_blank")
         }
      </script>
-	  <!-- start of privacy policy  -->
-      <div class="container mt-5 mb-40px">
+      <div class="container mt-5 mb-40px open-mobile-form">
         <div class="row d-flex justify-content-center ">
             <div class="col-md-8 col-sm-12 mb-10px">
                 <div class="contact-form">
@@ -539,58 +335,6 @@
 
       <!-- end of privacy policy -->
     
-
-      <!-- Touseeef's Code -->
-
-
-
-		<!-- here i am going to write a code for call to actions buuttons -->
-		<div class=" container divToShow card  bg-light ">
-			<form class="form p-3"  id="contact-form" method="post" action="form.php">
-				<div class="messages"></div>
-				<div class="controls mt-3">
-					<div class="row"> 
-						<div class="col-md-12">
-							<div class="form-group">
-								<input id="form_name" class="form-control" type="text" name="name" placeholder="Name"  required="required" data-error="Name is required.">
-								<div class="help-block with-errors color-red"></div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required" data-error="email is required.">
-							<div class="help-block with-errors color-red"></div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input id="form_subject" class="form-control" type="number" name="number" placeholder="Number">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="6" required="required" data-error="Message."></textarea>
-								<div class="help-block with-errors color-red"></div>
-							</div>
-						</div>
-						<div class="col-md-12 d-flex justify-content-between">							
-							<button role="button" name="submit" class="main-btn btn-1 msg-btn">Send Message </button>
-							<div onclick="closeForm()" style="cursor: pointer;">
-								<i class="fa fa-arrow-left color-red mt-3 mr-3 close-icon"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form> 		
-		</div>
-
-		<div class="outer-show" onclick="myFun()" >
-			<p>Let's Get Started</p>
-		  </div>
-		</div>
-	
-	<!-- Touseeef's Code  -->
 
 
       <!-- =================================================
