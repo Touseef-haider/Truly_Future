@@ -86,7 +86,7 @@ function closeForm() {
 		document.querySelector('.close-icon').style.display='none';
 		document.querySelector('.btn-3').style.display='none'
 		count=0
-}
+	}
 
 }
 	
