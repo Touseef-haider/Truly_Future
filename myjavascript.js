@@ -1,4 +1,15 @@
-
+window.onscroll=()=>{
+	if (document.documentElement.scrollTop < 155) {
+		console.log(document.documentElement.scrollTop)
+		document.querySelector('#logo-main').style.display = 'inline-block';
+		document.querySelector('#logo-scrl').style.display = 'none';
+	}
+	
+	else{
+		document.querySelector('#logo-main').style.display = 'none';
+		document.querySelector('#logo-scrl').style.display = 'inline-block';
+	}
+}
 document.querySelector('.main-service').addEventListener('mouseover',()=>{
 	var x = window.matchMedia("(max-width: 991px)")
 	var y = window.matchMedia("(max-width: 1076px)")
