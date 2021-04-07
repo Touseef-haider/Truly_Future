@@ -261,3 +261,14 @@ body::-webkit-scrollbar {
     -webkit-clip-path: none;
     clip-path: none;
 }
+
+.image-pc{
+    margin-top: 30px;
+    padding: 30px;
+    width: 600px;
+    background-color: black;
+}
+
+.decision{
+    margin-top: 30px;
+}
