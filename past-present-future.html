@@ -20,122 +20,11 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/green-style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="./mystyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900%7cOpen+Sans:300,400,600,700,800" rel="stylesheet">
   </head>
 
-  		<!-- my css for checking purpose -->
-	<style>
-		html{
-			scroll-behavior: smooth;
-		}
-		tab.active + img{
-			color: white;
-		}	
-		.outer-show{
-			width: 50px;
-			z-index: 999;
-			height: 180px;
-			cursor: pointer;
-			box-shadow: -20px 7px 18px -7px rgba(87, 184, 151, 0.09);
-			border-radius: 0 10px 10px 0;
-			display: inline-block;
-			padding-top: 0;
-			vertical-align: top;
-			/* margin-top: 120px; */
-			position: fixed;
-			text-transform: uppercase;
-			/* background: linear-gradient(to right,magenta, #008080); */
-			background-color: #16c885;
-			left: 0px;
-			right: auto;
-			top: 40%;
-		}
-
-		.outer-show p {
-			color: #ffffff;
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-			position: absolute;
-			display: block;
-			transform: rotate(-90deg);
-			-webkit-transition: 0.4s;
-			-moz-transition: 0.4s;
-			-o-transition: 0.4s;
-			transition: 0.4s;
-			left: -38px;
-			text-transform: capitalize;
-			white-space: pre;
-			bottom: 75px;
-		}
-		.divToShow{
-			z-index: 2;
-			display: none;		
-			height: 400px;	
-			transition: height 3s;
-			animation: grow0 0.5s forwards;
-		}
-		.openDiv{
-			position: fixed;
-			top: 30%;
-			transition: left  3s ease;
-		}
-		.close-icon{
-			display: none;
-		}
-		@keyframes grow0 {
-			from {
-				width: 0px;
-			}
-			to {
-				width: 400px;
-			}
-		}
-		@keyframes grow1 {
-			from {
-				width: 0px;
-			}
-			to {
-				width: 250px;
-			}
-		}
-		@media (max-width: 500px){
-			.logo-lower{
-				margin-top: 60px;
-			}
-		}
-
-		@media(max-width: 400px){
-			
-			.divToShow{
-				display: none;
-			}
-			.outer-show{
-				display: none;
-			}
-		}
-		.btn-3{
-			display: none;
-		}
-		.bg-image{
-			
-			position: relative;
-			height: 100vh;
-			background-image: url('./images/Trulyfuture-slider-img.webp');
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			background-color: rgba(0,0,0,0.8);
-			/* background-blend-mode: overlay; */
-			text-align: center;
-			overflow: hidden;
-			-webkit-clip-path: none;
-			clip-path: none;
-		}
-
-		
-	</style>
+  	
 
 <body>
 	  <!-- ==================================================
@@ -162,8 +51,8 @@
 	  <nav class="navbar navbar-expand-lg">
 		<div class="container">
 			<a class="navbar-brand color-fff color-red-hvr fs-25 fw-600 mr-auto ml-auto" href="./index.html">
-				
-				<img src="./images/Trulyfuture-logo-dark.webp" class="logo-scroll" alt="log">
+				<img src="./images/Trulyfuture-logo-dark.webp"  id="logo-scrl"  class="logo-scroll" alt="log">
+				<img src="./images/Trulyfuture-logo-light.webp" id="logo-main" class="logo-scroll" alt="log">
 				<span class="bg-red d-inline-block radius-50"></span> 
 			</a>
 			<div class="bars z-index-1" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -182,11 +71,54 @@
 					<li class="nav-item">
 						<!-- <a class="nav-link" href="#" data-scroll-nav="20">About</a> -->
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="3">Services</a>
+
+					<!-- for desktop view (START) -->
+					<li class="nav-item serviceD main-service" >
+						<a class="nav-link "   href="#" data-scroll-nav="3">Services</a>
 					</li>
+					<div  id="services-section">
+						<ul>
+							<li>
+								<a href="./logo-design.html" >Logo Design</a>
+							</li>
+							<li>
+								<a href="./web-development.html">Web Development</a>
+							</li>
+							<li>
+								<a href="./seo.html"> SEO </a>
+							</li>
+							<li>
+								<a href="./digitalmarketing.html">Digital Marketing</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- for desktop view (END) -->
+
+					<!-- Start of mobile + views -->
+					<li class="nav-item serviceM">
+						<span class="nav-link" data-toggle="collapse" data-target="#mycollapseM" >Services</span>
+					 </li>
+					  <div class="collapse services-sectM" id="mycollapseM">
+						  <ul>
+							  <li>
+								  <a href="./logo-design.html" >Logo Design</a>
+							  </li>
+							  <li>
+								  <a href="./web-development.html">Web Development</a>
+							  </li>
+							  <li>
+								  <a href="./seo.html"> SEO </a>
+							  </li>
+							  <li>
+								  <a href="./digitalmarketing.html">Digital Marketing</a>
+							  </li>
+						  </ul>
+					  </div>
+
+					<!-- End of mobile + views -->
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="4">Work</a>
+						<a class="nav-link" href="./index.html#work" >Work</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./blogs.html">Blog</a>
@@ -224,7 +156,7 @@
 				<div>
 					<img src="./images/Trulyfuture-logo-dark.webp" alt="Truly Future">
 
-					<span class="color-eee fs-15 d-block mt-30px mb-50px">Creative agency & digital marketing services</span>
+					<span class="color-eee fs-15 d-block mt-20px mb-10px">Creative agency & digital marketing services</span>
 					<ul class="sidebar-list list-unstyled pl-0px">
 						<li class="mb-20px">
 						  <a class="color-fff color-fff-hvr" href="./index.html">Home</a>
@@ -233,10 +165,28 @@
 						  <a class="color-fff color-fff-hvr" href="./about.html">About</a>
 						</li>
 						<li class="mb-20px">
-						  <a class="color-fff color-fff-hvr" href="#" data-scroll-nav="3">Services</a>
-						</li>
+							<a class="color-fff color-fff-hvr" href="#" data-toggle="collapse" data-target="#mycollapse" >
+								Services 
+							</a>
+						  </li>
+						  <div class="collapse services-sect" id="mycollapse">
+							  <ul>
+								  <li>
+									  <a href="./logo-design.html" >Logo Design</a>
+								  </li>
+								  <li>
+									  <a href="./web-development.html">Web Development</a>
+								  </li>
+								  <li>
+									  <a href="./seo.html"> SEO </a>
+								  </li>
+								  <li>
+									  <a href="./digitalmarketing.html">Digital Marketing</a>
+								  </li>
+							  </ul>
+						  </div>
 						<li class="mb-20px">
-						  <a class="color-fff color-fff-hvr" href="#" data-scroll-nav="4">Work</a>
+						  <a class="color-fff color-fff-hvr" href="./index.html#work">Work</a>
 						</li>
 						<li class="mb-20px">
 						  <a class="color-fff color-fff-hvr" href="./blogs.html">Blog</a>
@@ -261,17 +211,36 @@
 	  <!-- ==================================================
 							blog-intro
       ================================================== -->
-	  <section class="blog-intro">
+	  <!-- <section class="blog-intro">
 		 <div class="overlay-bg-75 sec-padding flex-center">
 			  <div class="container">
 				  <div>
-					  <h1 class="mb-20px color-fff fw-400">The previous century, current year, and future decade!!!</h1>
+					  <h1 class="mb-20px color-fff fw-400">
+						  The previous century, current year, and future decade!!!
+						</h1>
 					  <a href="index.html" class="color-fff color-red-hvr fs-25">Home</a> <span class="color-aaa fs-18">/ </span>
 					  <span class="color-aaa fs-18">Past Present Future</span>
 				  </div>
 			  </div>
 		  </div>
-	  </section>
+	  </section> -->
+	  <section class="bg-image d-flex justify-content-center align-items-center text-center" data-scroll-index="1">
+		  
+		<div class="flex-center med-padding">
+			<div class="container ">
+				<div class="welcome-text logo-lower">
+					<!-- <span class="color-ccc fw-200 fs-25 mt-5"><strong></strong> </span> -->
+					<h1 class="mt-20px mb-20px color-fff fw-500">
+						The previous century, current year, and future decade!!!
+					</h1>
+					<span class="circle-1 p-absolute bg-red radius-3px"></span>
+					<p class="color-fff font-size-4">
+					  Past Present Future
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	  <!-- ==================================================
 							End blog-intro
       ================================================== -->
@@ -326,70 +295,7 @@
 			<p>Let's Get Started</p>
 		  </div>
 		</div>
-		<script>
-			
-			var count = 0; 
-			function myFun() {
-				if (count == 0) {
-					
-					var x = window.matchMedia("(max-width: 500px)")
-					if (x.matches) {
-						// document.querySelector('welcome-text span').style.marginTop = '50px'
-						document.querySelector('.divToShow').classList.add('openDiv')
-						document.querySelector('.divToShow').style.width = '250px'
-						document.querySelector('.divToShow').style.animation = 'grow1 0.5s forwards'
-						document.querySelector('.outer-show').style.left = '250px'
-						document.querySelector('.outer-show').style.transition = 'left 1s'
-						document.querySelector('.outer-show').style.zindex = 2;
-						document.querySelector('.divToShow').style.display = 'block'
-						setTimeout(() => {
-							document.querySelector('.btn-3').style.display='block';						
-							document.querySelector('.close-icon').style.display='block';
-						}, 500);
-						count = count + 1;
-						
-					} else {
-						document.querySelector('.divToShow').classList.add('openDiv')
-						document.querySelector('.divToShow').style.width = '400px';
-						document.querySelector('.divToShow').style.animation = 'grow0 0.3s forwards'
-						document.querySelector('.outer-show').style.left = '400px';
-						document.querySelector('.outer-show').style.transition = 'left 1s';
-						document.querySelector('.outer-show').style.zindex = 2;
-						document.querySelector('.divToShow').style.display = 'block'
-						setTimeout(() => {
-							document.querySelector('.btn-3').style.display='block';
-							document.querySelector('.close-icon').style.display='block';
-						}, 500);
-						count = count + 1;
-						
-					}
-				}
-				else{
-					count=0
-					document.querySelector('.divToShow').style.display = 'none'
-					document.querySelector('.outer-show').style.left = '0px'
-					document.querySelector('.outer-show').style.transition = 'left 1s'
-					
-					document.querySelector('.btn-3').style.display='none'
-					document.querySelector('.close-icon').style.display='none';
-
-				}
-			}
-			function closeForm() {
-				if (count==1) {
-					document.querySelector('.divToShow').style.display = 'none';
-					document.querySelector('.outer-show').style.left = '0px'
-					document.querySelector('.outer-show').style.transition = 'left 1s';
-					document.querySelector('.close-icon').style.display='none';
-					document.querySelector('.btn-3').style.display='none'
-					count=0
-			}
-
-		}
 	
-		</script>
-
-
 	<!-- Touseeef's Code  -->
 
 
@@ -519,7 +425,7 @@
 								  <img alt="img" src="images/blogs/blog4.webp">
 							  </div>
 							  <div class="col-md-8">
-								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="#0">The Revolutional Journey of Design Evolution
+								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="./design-evolution.html">The Revolutional Journey of Design Evolution
                                 </a> </h5>
 								  <p><i class="fa fa-clock-o color-red"></i> 27 February, 2021</p>
 							  </div>
@@ -529,7 +435,7 @@
 								  <img alt="img" src="images/blogs/blog5.webp">
 							  </div>
 							  <div class="col-md-8">
-								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="#0">It is time to actually power up the computing speed in exponential</a> </h5>
+								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="./exponential-compute-speed.html">It is time to actually power up the computing speed in exponential</a> </h5>
 								  <p><i class="fa fa-clock-o color-red"></i> 20 February, 2021</p>
 							  </div>
 						  </div>
@@ -538,7 +444,7 @@
 								  <img alt="img" src="images/blogs/blog3.webp">
 							  </div>
 							  <div class="col-md-8">
-								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="#0">The Design & Coding Ethics and Scam behind it</a> </h5>
+								  <h5 class="mb-7px"><a class="color-333 color-red-hvr" href="./design-and-coding-ethics.html">The Design & Coding Ethics and Scam behind it</a> </h5>
 								  <p><i class="fa fa-clock-o color-red"></i> 06 March, 2021</p>
 							  </div>
 						  </div>
@@ -579,7 +485,7 @@
 								<i class="fa fa-angle-right color-red"></i> <a href="./contact.html" class="color-ddd color-red-hvr fw-400 transition-3">Contact</a>
 							</h6>
 							<h6 class="mb-15px">
-								<i class="fa fa-angle-right color-red"></i> <a href="#pricing" class="color-ddd color-red-hvr fw-400 transition-3">Pricing</a>
+								<i class="fa fa-angle-right color-red"></i> <a href="./index.html#pricing" class="color-ddd color-red-hvr fw-400 transition-3">Pricing</a>
 							</h6>
 							<!-- <h6 class="mb-15px">
 								<i class="fa fa-angle-right color-red"></i> <a href="#services" class="color-ddd color-red-hvr fw-400 transition-3">Services</a>
@@ -685,6 +591,7 @@
   	<script src="js/map.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="./myjavascript.js"></script>
 	  
 	  
   </body>

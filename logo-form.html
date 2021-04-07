@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title></title>
+	<title>Blog - List</title>
 	<!-- Favicon -->
     <link rel="shortcut icon" href="images/faviconntf.webp" />
     <!-- Bootstrap CSS -->
@@ -42,7 +42,6 @@
 	  <!-- ==================================================
 							End load-wrapp
       ================================================== -->
-	  
 	 
 	  <!-- ==================================================
 							navbar
@@ -52,7 +51,6 @@
 			<a class="navbar-brand color-fff color-red-hvr fs-25 fw-600 mr-auto ml-auto" href="./index.html">
 				<img src="./images/Trulyfuture-logo-dark.webp"  id="logo-scrl"  class="logo-scroll" alt="log">
 				<img src="./images/Trulyfuture-logo-light.webp" id="logo-main" class="logo-scroll" alt="log">
-
 				<span class="bg-red d-inline-block radius-50"></span> 
 			</a>
 			<div class="bars z-index-1" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +116,7 @@
 
 					<!-- End of mobile + views -->
 
-				
+					
 					<li class="nav-item">
 						<a class="nav-link" href="#" data-scroll-nav="4">Work</a>
 					</li>
@@ -161,16 +159,16 @@
 					<span class="color-eee fs-15 d-block mt-20px mb-10px">Creative agency & digital marketing services</span>
 					<ul class="sidebar-list list-unstyled pl-0px">
 						<li class="mb-20px">
-						  <a class="color-fff color-fff-hvr" href="./index.html" >Home</a>
+						  <a class="color-fff color-fff-hvr" href="./index.html" data-scroll-nav="1">Home</a>
 						</li>
 						<li class="mb-20px">
 						  <a class="color-fff color-fff-hvr" href="./about.html">About</a>
 						</li>
-						<!-- <li class="mb-20px">
+						<li class="mb-20px">
 						  <a class="color-fff color-fff-hvr" href="#" data-toggle="collapse" data-target="#mycollapse" >
 							  Services 
 						  </a>
-						</li> -->
+						</li>
 						<div class="collapse services-sect" id="mycollapse">
 							<ul>
 								<li>
@@ -210,133 +208,229 @@
 							End navbar
       ================================================== -->
 
-	  <!-- ==================================================
-							blog-intro
-      ================================================== -->
-      <!-- <section class="flex-center d-flex align-items-center bg-image"  data-scroll-index="1">
+	  <section class="flex-center d-flex align-items-center bg-image"  data-scroll-index="1">
        
         <div class="med-padding">
             <div class="flex-center med-padding">
                 <div class="container ">
                     <div class="welcome-text logo-lower">
-                        <h1 class="color-red">Details For Payment Query</h1>
-						<small class="color-red mt-20px">
-							<p>
-								Please fill fhe below required information 
-							</p>
-						</small>
-                    </div>
-                </div>
-        </div>
-      </div>
-    </section> -->
-	<!-- Process -->
-	
-	<!-- ==================================================
-							process-area
-      ================================================== -->
-	  <section class="process-area text-center  sec-padding bg-111 process-area-for-mobile" >
-		<div class="container " style="margin-top: 100px;">
-			 <h6 class="circle-box p-relative color-red text-center fw-300 mb-5px mt-50px">
-				How We Work?
-				<span class="circle-1 p-absolute bg-red radius-3px"></span>
-			</h6>
-			<h1 class="title-h color-fff p-relative fw-600 mb-80px"><span class="fw-300">Details</span> For<span class="fw-300">  Payment Query</span></h1>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box mb-50px-sm">
-						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">01</h6>
-						<h4 class="color-fff mt-20px mb-10px">Select Plan</h4>
-						<p class="color-aaa">We audit and study the brand's niche and nature to extract all the functional and non-functional user requirements.</p> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box mb-50px-sm">
-						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">02</h6>
-						<h4 class="color-fff mt-20px mb-10px color-red">Fill Form</h4>
-						<p class="color-aaa">We then translate those requirements to an elegant presentable design to enhanced user experience.</p> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box after-none">
-						<h6 class="fw-400 color-fff bg-red mr-auto ml-auto radius-50 p-relative z-index-3">03</h6>
-						<h4 class="color-fff mt-20px mb-10px">Check Out</h4>
-						<p class="color-aaa">The next gen revolution begins here, when we transform the brand's idea and design into a breathtaking model.</p> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	 <script>
-         window.onload = () =>{
-            var amount =  window.location.href.split('/')[7].split('=')[1]
-            document.querySelector('.main-btn').href = `https://www.vbsystem.co/payment?amount=${amount}`
-            // document.querySelector('.main-btn').target = `_blank`
-        }
-        function proceed() {
-            // alert("Hello")
-            
-            window.open(`https://www.vbsystem.co/payment?amount=${amount}`,"_blank")
-        }
-     </script>
-      <div class="container mt-5 mb-40px open-mobile-form" >
-        <div class="row d-flex justify-content-center ">
-            <div class="col-md-8 col-sm-12 mb-10px">
-                <div class="contact-form">
-                    <form class="form" id="contact-form" method="post" action="details.php">
-                        <div class="messages"></div>
-                        <div class="controls">
-                            <div class="row"> 
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label class="color-red" for="name">Enter Your Name</label>
-                                        <input id="form_name" class="form-control" type="text" name="name" placeholder="Name"  required="required" data-error="Name is required.">
-                                        <!-- <small id="emailHelp" class="form-text text-muted">Name</small> -->
-                                        <div class="help-block with-errors color-red"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label class="color-red" for="email">Enter Email</label>
-                                        <input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required" data-error="email is required.">
-                                    <div class="help-block with-errors color-red"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <label class="color-red" for="number">Enter Number</label>
-                                        <input id="form_subject" class="form-control" type="number" name="number" placeholder="Number">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <label class="color-red" for="message">Write Message</label>
-                                        <textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="6" required="required" data-error="Message."></textarea>
-                                        <div class="help-block with-errors color-red"></div>
-                                    </div>
-                                </div> -->
-                                <div class="col-md-4  col-sm-6">
-                                    <a role="button" name="submit"  style="display: block !important;" class="main-btn btn-3">Proceed to payment</a>
-                                </div>
-								<div class="col-md-4 mt-15px col-md-12">
-									<small>
-										<p>You will be redirected to the parent company (Virtual Bay) </p>
-									</small>
-								</div>  
-                            </div>
-                        </div>
-                    </form>    
+                        <h2 class="color-red">
+                            Answer the questions 
+                        </h2>
                 </div>
             </div>
-           
-
         </div>
       </div>
- 
+    </section>
+	  <!-- ==================================================
+							blog-intro
+      ================================================== -->
+	
+	  <!-- start of privacy policy  -->
+
+      <!-- PHASE 1 -->
+      <div class="container">
+        <div class="row m-3">
+            <p>
+                I need a Logo Designed for my brand:
+
+            </p>
+            <div class="col-md-12 div-color text-center">
+                <form class="form p-3"  id="contact-form" method="post" action="form.php">
+                    <div class="messages"></div>
+                    <div class="controls mt-3">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="industry">
+                                        Q1: The type of business I am in (Industry)
+                                    </label>    
+                                    <input id="form_name" class="form-control" type="text" name="industry" placeholder="industry"  required="required" data-error="industry is required.">
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="logo">
+                                        Q:2 The name I am looking to get a “Logo” for: 
+                                    </label>    
+                                    <input id="form_name" class="form-control" type="text" name="logo" placeholder="name "  required="required" data-error="Name is required.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> 	
+            </div>
+        </div>
+
+    </div>
+    <!-- END OF PHASE 1  -->
+
+    <!-- PHASE 2 -->
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-md-12 div-color text-center">
+                <form class="form p-3"  id="contact-form" method="post" action="form.php">
+                    <div class="messages"></div>
+                    <div class="controls mt-3">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="designType">
+                                        Q3: The type of design I need?
+                                    </label>    
+                                    <select class="form-select form-control" id="designType" aria-label="Default select example">
+                                        <option selected>Select the design type</option>
+                                        <option value="50">2D</option>
+                                        <option value="200">3D</option>
+                                    </select>  
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="Elements">
+                                        Elements ?            
+                                    </label>    
+                                    <select class="form-select form-control" id="Elements" aria-label="Default select example">
+                                        <option selected>Select the element</option>
+                                        <option value="15">Text Based</option>
+                                        <option value="20">Icon Based</option>
+                                        <option value="50">Text & Icon Both</option>
+                                        <option value="70">Text Based</option>
+                                    </select>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="art">
+                                        Art Kind?
+                                    </label>    
+                                    <select class="form-select form-control" id="art" aria-label="Default select example">
+                                        <option selected>Select the Art Kind</option>
+                                        <option value="10">A proper digital illustration </option>
+                                        <option value="5">I have a design in mind</option>
+                                        <option value="50">an abstract piece of art it should be </option>
+                                    </select>  
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="color">
+                                        Color type ?            
+                                    </label>    
+                                    <select class="form-select form-control" id="color" aria-label="Default select example">
+                                        <option selected>Select the element</option>
+                                        <option value="5">Single color (recommended)</option>
+                                        <option value="5">Two colors (recommended)</option>
+                                        <option value="7">Three Colors (slightly less recommended)</option>
+                                        <option value="10">three+ colors (not recommended)($10)</option>
+                                    </select>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> 	
+            </div>
+        </div>
+
+    </div>
+    <!-- END  OF PHASE 2 -->
+
+
+    <!-- PHASE 3 -->
+    <div class="container">
+        <div class="row m-3">
+
+            <div class="col-md-12 div-color text-center">
+                <form class="form p-3"  id="contact-form" method="post" action="form.php">
+                    <div class="messages"></div>
+                    <div class="controls mt-3">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="industry">
+                                        Q1: The type of business I am in (Industry)
+                                    </label>    
+                                    <input id="form_name" class="form-control" type="text" name="industry" placeholder="industry"  required="required" data-error="industry is required.">
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label p-0 m-0" for="logo">
+                                        Q:2 The name I am looking to get a “Logo” for: 
+                                    </label>    
+                                    <input id="form_name" class="form-control" type="text" name="logo" placeholder="name "  required="required" data-error="Name is required.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> 	
+            </div>
+        </div>
+
+    </div>
+    <!-- END OF PHASE 3 -->
 
       <!-- end of privacy policy -->
-    
+		<!-- Touseeef's Code -->
+
+
+
+		<!-- here i am going to write a code for call to actions buuttons -->
+		<div class=" divToShow card  bg-light ">
+			<form class="form p-3"  id="contact-form" method="post" action="form.php">
+				<div class="messages"></div>
+				<div class="controls mt-3">
+					<div class="row"> 
+						<div class="col-md-12">
+							<div class="form-group">
+								<input id="form_name" class="form-control" type="text" name="name" placeholder="Name"  required="required" data-error="Name is required.">
+								<div class="help-block with-errors color-red"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required" data-error="email is required.">
+							<div class="help-block with-errors color-red"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input id="form_subject" class="form-control" type="number" name="number" placeholder="Number">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="6" required="required" data-error="Message."></textarea>
+								<div class="help-block with-errors color-red"></div>
+							</div>
+						</div>
+						<div class="col-md-12 d-flex justify-content-between">							
+							<button role="button" name="submit" class="main-btn btn-3">Send Message </button>
+							<div onclick="closeForm()" style="cursor: pointer;">
+								<i class="fa fa-arrow-left color-red mt-3 mr-3 close-icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form> 		
+		</div>
+
+		<div class="outer-show" onclick="myFun()" >
+			<p>Let's Get Started</p>
+		  </div>
+		</div>
+		
+
+
+	<!-- Touseeef's Code  -->
 
 
       <!-- =================================================
@@ -353,7 +447,7 @@
 	  <!-- ==================================================
 							footer-area
       ================================================== -->
-	  <section class="footer-area" >
+	  <section class="footer-area" style="background-image: url('./images/Footer-Background-Image.webp');background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;">
 		<div class="overlay-bg-90 sec-padding"> 
 			<div class="container">
 				<div class="row ml-2">
@@ -362,7 +456,7 @@
 							<!-- <h3 class="color-red">Kholod</h3> -->
 							<img class="mb-4" src="./images/Trulyfuture-logo-light.webp">
 							<p class="mb-20px color-aaa">We are your digital transformation house here to evolve your business.</p>
-							<a class="main-btn btn-1 " href="./index.html">Get Started</a>
+							<a class="main-btn btn-1 " onclick="myFun()" href="#0">Get Started</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
@@ -372,21 +466,20 @@
 								<i class="fa fa-angle-right color-red"></i> <a href="./index.html" class="color-ddd color-red-hvr fw-400 transition-3">Home</a>
 							</h6>
 							<h6 class="mb-15px">
-								<i class="fa fa-angle-right color-red"></i> <a href="#pricing" class="color-ddd color-red-hvr fw-400 transition-3">Pricing</a>
-							</h6>
-							<h6 class="mb-15px">
 								<i class="fa fa-angle-right color-red"></i> <a href="./about.html" class="color-ddd color-red-hvr fw-400 transition-3">About</a>
 							</h6>
-							<!-- <h6 class="mb-15px">
-								<i class="fa fa-angle-right color-red"></i> <a href="#services" class="color-ddd color-red-hvr fw-400 transition-3">Services</a>
-							</h6> -->
 							<h6 class="mb-15px">
+								<i class="fa fa-angle-right color-red"></i> <a href="./index.html#pricing" class="color-ddd color-red-hvr fw-400 transition-3">Pricing</a>
+							</h6>
+							<!-- <h6 class="mb-15px">
+								<i class="fa fa-angle-right color-red"></i> <a href="./index.html#services" class="color-ddd color-red-hvr fw-400 transition-3">Services</a>
+							</h6> -->
+							<h6 class="mb-15px"">
 								<i class="fa fa-angle-right color-red"></i> <a href="./blogs.html" class="color-ddd color-red-hvr fw-400 transition-3">Blog</a>
 							</h6>
-							
-							<h6 class="mb-15px"">
+							<!-- <h6 class="mb-15px"">
 								<i class="fa fa-angle-right color-red"></i> <a href="./privacypolicy.html" class="color-ddd color-red-hvr fw-400 transition-3">Privacy Policy</a>
-							</h6>
+							</h6> -->
 							<h6 class="mb-15px"">
 								<i class="fa fa-angle-right color-red"></i> <a href="./terms&conditions.html" class="color-ddd color-red-hvr fw-400 transition-3">Terms & Conditions</a>
 							</h6>
@@ -437,7 +530,7 @@
       ================================================== -->
 	  <section class="footer-padding bg-222 text-center">
         <div class="container">
-            <h6 class="mb-0px color-eee fw-400">Copyright &#169;	2021 All rights reserved | Truly Future by Virtual Bay</h6>
+            <h6 class="mb-0px color-eee fw-400">Copyright &#169;	2021 All rights reserved | Truly Future by Truly Future</h6>
         </div>
     </section>
 	  <!-- ==================================================
@@ -481,7 +574,6 @@
 	<script src="js/main.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="./myjavascript.js"></script>
-	  
 	  
   </body>
 </html>

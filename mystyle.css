@@ -1,3 +1,7 @@
+#logo-scrl{
+    display: none;
+}
+
 #services-section{
     position: absolute;
     top: 80px;
@@ -119,9 +123,39 @@ tab.active + img{
     white-space: pre;
     bottom: 75px;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #16c885;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #16c885;
+    outline: 1px solid #16c885;
+}
+
+.divToShow::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+   
+  .divToShow::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #16c885;
+  }
+   
+  .divToShow::-webkit-scrollbar-thumb {
+    background-color: #16c885;
+    outline: 1px solid #16c885;
+}
+
 .divToShow{
     z-index: 2;
     display: none;	
+    overflow: scroll;
+    scrollbar-darkshadow-color: #16c885;
     height: 400px;	
     transition: height 3s;
     animation: grow0 0.5s forwards;
@@ -161,6 +195,7 @@ tab.active + img{
     .logo-lower{
         margin-top: 60px;
     }
+
 }
 
 @media (max-width: 991px){
@@ -177,6 +212,12 @@ tab.active + img{
     .divToShow{
     overflow: scroll;	
 
+    }
+    .process-area-for-mobile{
+        display: none !important;
+    }
+    .open-mobile-form{
+        margin-top: 200px !important;
     }
 }
 
@@ -219,4 +260,15 @@ tab.active + img{
     overflow: hidden;
     -webkit-clip-path: none;
     clip-path: none;
+}
+
+.image-pc{
+    margin-top: 30px;
+    padding: 30px;
+    width: 600px;
+    background-color: black;
+}
+
+.decision{
+    margin-top: 30px;
 }
